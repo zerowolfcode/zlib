@@ -1,29 +1,23 @@
-function z(id){
- if(window===this){return new z(id)}
- this.e=document.querySelectorAll(id);
- return this;
-};
-z.prototype={
- h:function(){
-  for(var i=0;i<this.e.length;i++){
-   this.e[i].style.display='none';
-  }
-  return this;
- },
- s:function(){
-  for(var i=0;i<this.e.length;i++){
-   this.e[i].style.display='';
-  }
-  return this;
- },
- c:function(e){return document.createElement(e)},
- a:function(e){this.e[0].appendChild(e)},
- html:function(html){
-  if(!html){html=this.e[0].innerHTML};
-  return this.e[0].innerHTML=html;
- },
- v:function(v){
-  if(!v){v=this.e[0].value};
-  return this.e[0].value=v;
- }
-}
+var z=(function(z){
+ z.z=function(z){
+  if(z.tagName){return [z]};
+  return document.querySelectorAll(z);
+ };
+ return z;
+}(z||{}));
+var z=(function(z){
+ var i=0;
+ z.html=function(e,html){
+  e=z.z(e)[0];
+  if(!html){html=e.innerHTML}
+  return e.innerHTML=html;
+ };
+ z.v=function(e,v){
+  e=z.z(e)[0];
+  if(!v){v=e.value}
+  return e.value=v;
+ };
+ z.c=function(e){return document.createElement(e)};
+ z.a=function(p,e){z.z(p)[0].appendChild(e)};
+ return z;
+}(z||{}));
