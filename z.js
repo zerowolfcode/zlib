@@ -6,9 +6,8 @@ var z=(function(z){
  return z;
 }(z||{}));
 var z=(function(z){
- var i=0;
- z.h=function(e){e=z.z(e);for(;i<e.length;i++){e[i].style.display='none'}};
- z.s=function(e){e=z.z(e);for(;i<e.length;i++){e[i].style.display=''}};
+ z.h=function(e){e=z.z(e);for(var i=0;;i<e.length;i++){e[i].style.display='none'}};
+ z.s=function(e){e=z.z(e);for(var i=0;;i<e.length;i++){e[i].style.display=''}};
  z.html=function(e,html){
   e=z.z(e)[0];
   if(!html){html=e.innerHTML}
