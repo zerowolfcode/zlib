@@ -12,9 +12,10 @@ var z=(function(z){
    }
    int.push(parseInt(temp2,2));
   };
-  return int;
+  return JSON.stringify(int);
  };
  z.int2bin=function(int,n){
+  int=JSON.parse(int);
   var bin='';
   for(var i=0;i<int.length;i++){
    bin+=int[i].toString(2);
