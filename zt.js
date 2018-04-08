@@ -12,4 +12,4 @@ txt=(e,t)=>t===undefined?z(e,0).textContent:z(e,0).textContent=t,
 v=(e,v)=>v===undefined?z(e,0).value:z(e,0).value=v,
 c=e=>d.createElement(e),
 a=(p,e)=>{z(p,0).appendChild(e);return p},
-clk=(e,f)=>{z(p,0).onclick=f};
+clk=(e,f)=>{z(e,0).onclick=f};
