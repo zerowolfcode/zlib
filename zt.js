@@ -1,2 +1,2 @@
-export var d=document,
-txt=(e,t)=>d.getElementById(e).textContent=t,
+export var d=document;
+export var txt=(e,t)=>d.getElementById(e).textContent=t;
